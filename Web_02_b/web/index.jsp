@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cong</title>
+        <title>CongTruNhanChia</title>
     </head>
     <body>
         <form action="NewServlet" method="post">
