@@ -21,8 +21,6 @@ public class UserDAO {
 
     public UserDAO() {
     }
-    
-    
 
     public UserDTO login(String username, String password) {
         UserDTO u = searchById(username);
@@ -40,11 +38,9 @@ public class UserDAO {
             PreparedStatement statement = conn.prepareStatement(sql);
             statement.setString(1, username);
             ResultSet rs = statement.executeQuery();
-            
+
             System.out.println(sql);
             System.out.println(rs);
-            
-            
 
             UserDTO user = null;
             while (rs.next()) {
