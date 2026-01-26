@@ -12,12 +12,12 @@
         <title>Search</title>
     </head>
     <body>
-        <input type="text" name="username" style="width: 95vw;margin: auto;align-self: center">
+        <input type="text" name="username" style="width: 97.5vw;height: 25px;margin: auto;align-self: center">
         <table border="1">
             <thead>
                 <tr>
-                    <th></th>
-                    <th></th>
+                    <th>名前</th>
+                    <th>password</th>
                 </tr>
             </thead>
             <tbody>

@@ -1,20 +1,18 @@
 <%-- 
-    Document   : a
-    Created on : Jan 19, 2026, 10:17:26 AM
+    Document   : b
+    Created on : Jan 19, 2026, 11:18:11 AM
     Author     : Thua
 --%>
 
-<%@page import="Model.UserDTO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Controller</title>
+        <title>Khong cho vao =))</title>
     </head>
     <body>
-        <h1>Chao mung ban <%=((UserDTO) session.getAttribute("user")).getFullName()%> da dang nhap thanh cong</h1>
+        <h1>Tai khoan cua ban da bi Ban vui long lien he voi quan tri vien</h1>
         <h2><a href="MainController?action=logout">logout</a></h2>
-        <h2><a href="dashboard.jsp">dashboard</a></h2>
     </body>
 </html>
