@@ -56,7 +56,20 @@
                             <td>${u.type}</td>
                             <td>${u.totalStudents}</td>
                             <td>${u.totalFaculties}</td>
-                            <td>${u.isDraft}</td>
+                            <td>
+                                <c:if test="${u.isDraft}">
+                                    <input type="submit" value="Update">
+                                </c:if>
+                            </td>
+                            <td>  
+                                <form action="MainController" method="post"
+                                      onsubmit="return confirm('Bạn có chắc chắn muốn xóa trường đại học này không?');">
+                                    <input type="hidden" name="action" value="deleteUniversity"/>
+                                    <input type="hidden" name="id" value="${u.id}"/>
+                                    <input type="hidden" name="keywords" value="${keywords}"/>
+                                    <input type="submit" value="Delete"/>
+                                </form>
+                            </td>
                         </tr>
                     </c:forEach>
                 </tbody>
